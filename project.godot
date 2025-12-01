@@ -10,6 +10,30 @@ config_version=5
 
 [application]
 
-config/name="New Game Project"
+config/name="HyperQuest"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+SignalBus="*res://autoload/signal_bus.gd"
+GameManager="*res://autoload/game_manager.gd"
+
+[display]
+
+window/size/viewport_width=640
+window/size/viewport_height=360
+window/size/window_width_override=1280
+window/size/window_height_override=720
+window/stretch/mode="viewport"
+
+[layer_names]
+
+2d_physics/layer_1="BATTLE_FIELD"
+2d_physics/layer_2="PLAYER"
+2d_physics/layer_3="ENEMY"
+2d_physics/layer_5="BATTLE_POPUP"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
