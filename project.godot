@@ -14,6 +14,13 @@ config/name="HyperQuest"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+SignalBus="*res://autoload/signal_bus.gd"
+GameManager="*res://autoload/game_manager.gd"
+LevelSelectManager="*res://autoload/level_select_manager.gd"
+PartyManager="*res://autoload/party_manager.gd"
+
 [display]
 
 window/size/viewport_width=640
